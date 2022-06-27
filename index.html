@@ -6,16 +6,18 @@
   <meta http-equip="X-UA-Compatible" content="IE=edge">
   <meta name="vievport" content="width=device-width, initial-scale=1.0">
   <title>Leonic</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <div class="conteiner">
+    <div class="container flex header-container">
       <a href="#" class="header-logo">
         <img src="img/logo.svg" alt="logo" class="header-logo">
       </a>
       <nav class="header-nav">
-        <ul class="header-list">
+        <ul class="list-reset header-list flex">
           <li class="header-list-item">
             <a href="#hero" class="header-link">
               Home
@@ -47,10 +49,10 @@
             </a>
           </li>
         </ul>
-        <button class="header-btn btn">
-          FREE TRIAL
-        </button>
       </nav>
+      <button class="btn-reset header-btn btn">
+        FREE TRIAL
+      </button>
     </div>
   </header>
 
@@ -58,7 +60,7 @@
 
     <section id="hero" class="hero">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content flex">
           <h1 class="hero-title">
             This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal online
           </h1>
@@ -66,7 +68,7 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
             ut&nbsp;laoreet dolore.
           </p>
-          <button class="btn hero-btn">
+          <button class="btn-reset btn hero-btn">
             FREE 30&nbsp;DAY TRIAL
           </button>
           <span class="hero-secure">
@@ -76,7 +78,7 @@
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services section-offset">
       <div class="container">
         <h2 class="services-title section-title">
           Services
@@ -84,7 +86,7 @@
         <p class="section-descr services-descr">
           Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.
         </p>
-        <ul class="services-list">
+        <ul class="list-reset services-list flex">
           <li class="services-list-item">
             <svg class="services-item-icon" width="68" height="66" viewBox="0 0 68 66" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +97,7 @@
             <h3 class="services-item-title">
               Your Legacy
             </h3>
-            <p class="services-item-descr section-descr">
+            <p class="services-item-descr">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             </p>
           </li>
@@ -109,7 +111,7 @@
             <h3 class="services-item-title">
               Your Health
             </h3>
-            <p class="services-item-descr section-descr">
+            <p class="services-item-descr">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             </p>
           </li>
@@ -124,7 +126,7 @@
             <h3 class="services-item-title">
               Funeral & Memorial
             </h3>
-            <p class="services-item-descr section-descr">
+            <p class="services-item-descr">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             </p>
           </li>
@@ -147,14 +149,14 @@
       </div>
     </section>
 
-    <section id="articles" class="articles">
-      <div class="conteiner">
+    <section id="articles" class="articles section-offset">
+      <div class="container">
         <h2 class="section-title articles-title">
           Articles
         </h2>
-        <ul class="articles-list">
+        <ul class="list-reset articles-list flex">
           <li class="articles-item">
-            <article class="blog-preview">
+            <article class="blog-preview flex">
               <img src="img/blog-1.jpg" alt="blog-1" class="blog-preview-image">
               <div class="blog-preview-text">
                 <time class="blog-preview-time" datetime="2021-11-15 19:30">
@@ -170,7 +172,7 @@
             </article>
           </li>
           <li class="articles-item">
-            <article class="blog-preview">
+            <article class="blog-preview flex">
               <img src="img/blog-2.jpg" alt="blog-2" class="blog-preview-image">
               <div class="blog-preview-text">
                 <time class="blog-preview-time" datetime="2021-11-15 19:30">
@@ -186,7 +188,7 @@
             </article>
           </li>
           <li class="articles-item">
-            <article class="blog-preview">
+            <article class="blog-preview flex">
               <img src="img/blog-3.jpg" alt="blog-3" class="blog-preview-image">
               <div class="blog-preview-text">
                 <time class="blog-preview-time" datetime="2021-11-15 19:30">
@@ -202,7 +204,7 @@
             </article>
           </li>
           <li class="articles-item">
-            <article class="blog-preview">
+            <article class="blog-preview flex">
               <img src="img/blog-4.jpg" alt="blog-4" class="blog-preview-image">
               <div class="blog-preview-text">
                 <time class="blog-preview-time" datetime="2021-11-15 19:30">
@@ -221,19 +223,19 @@
       </div>
     </section>
 
-    <section id="clients" class="clients">
+    <section id="clients" class="clients section-offset">
       <div class="container">
         <h2 class="clients-title section-title">
           Clients
         </h2>
-        <ul class="clients-list">
-          <li class="clients-item">
+        <ul class="list-reset clients-list flex">
+          <li class="clients-item flex">
             <p class="clients-descr section-descr">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, maxime, odit ullam exercitationem est
               consequatur explicabo, quo officiis ut dolore ab. Vitae repudiandae exercitationem eaque impedit
               nesciunt aperiam temporibus assumenda!
             </p>
-            <div class="clients-user">
+            <div class="clients-user flex">
               <div class="clients-avatar">
                 <img src="img/client-1.jpg" alt="John Armstrong">
               </div>
@@ -247,13 +249,13 @@
               </div>
             </div>
           </li>
-          <li class="clients-item">
+          <li class="clients-item flex">
             <p class="clients-descr section-descr">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, maxime, odit ullam exercitationem est
               consequatur explicabo, quo officiis ut dolore ab. Vitae repudiandae exercitationem eaque impedit
               nesciunt aperiam temporibus assumenda!
             </p>
-            <div class="clients-user">
+            <div class="clients-user flex">
               <div class="clients-avatar">
                 <img src="img/client-2.jpg" alt="Elizabeth Martin">
               </div>
@@ -267,13 +269,13 @@
               </div>
             </div>
           </li>
-          <li class="clients-item">
+          <li class="clients-item flex">
             <p class="clients-descr section-descr">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, maxime, odit ullam exercitationem est
               consequatur explicabo, quo officiis ut dolore ab. Vitae repudiandae exercitationem eaque impedit
               nesciunt aperiam temporibus assumenda!
             </p>
-            <div class="clients-user">
+            <div class="clients-user flex">
               <div class="clients-avatar">
                 <img src="img/client-3.jpg" alt="Robin Soutby">
               </div>
@@ -292,14 +294,14 @@
       </div>
     </section>
 
-    <section id="contacts" class="contacts">
+    <section id="contacts" class="contacts section-offset">
       <div class="container">
         <h2 class="contacts-title section-title">
           Contacts
         </h2>
         <address class="contacts-address">
-          <ul class="contacts-list">
-            <li class="contacts-item">
+          <ul class="list-reset contacts-list flex">
+            <li class="contacts-item flex">
               <strong class="contacts-item-caption">
                 Visit Us
               </strong>
@@ -307,7 +309,7 @@
                 Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
               </p>
             </li>
-            <li class="contacts-item">
+            <li class="contacts-item flex">
               <strong class="contacts-item-caption">
                 Call Us
               </strong>
@@ -318,7 +320,7 @@
                 +7 (123) 456-78-90
               </a>
             </li>
-            <li class="contacts-item">
+            <li class="contacts-item flex">
               <strong class="contacts-item-caption">
                 Email Us
               </strong>
@@ -346,7 +348,7 @@
       <span class="footer-text">
         Copyright ©2017. All Right Reserved
       </span>
-      <ul class="footer-list">
+      <ul class="list-reset footer-list">
         <li class="footer-item">
           <a href="#" class="footer-item-link">
             About Us
