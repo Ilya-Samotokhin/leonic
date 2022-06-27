@@ -20,7 +20,39 @@ img {
 
 body {
   min-width: 1200px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpenSans", sans-serif;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: OpenSans;
+  src: local("OpenSans-Regular"),
+    url("../fonts/open-sans-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: local("OpenSans-Light"),
+    url("../fonts/open-sans-light.woff2") format("woff2"),
+    url("../fonts/open-sans-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: local("OpenSans-Semibold"),
+    url("../fonts/open-sans-semibold.woff2") format("woff2"),
+    url("../fonts/open-sans-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* glob */
@@ -51,11 +83,19 @@ body {
 .section-title {
   margin: 0;
   margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 130%;
+  color: #1c1c1c;
 }
 
 .section-descr {
   margin: 0;
   margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #787878;
 }
 
 .section-offset {
@@ -63,11 +103,23 @@ body {
   padding-bottom: 160px;
 }
 
+.btn {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: #3172B9;
+  color: #fff;
+  border-radius: 3px;
+}
+
 /* header */
 .header-container {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid #C4C4C4;
+  background-color: #fff;
 }
 
 .header-logo {
@@ -82,10 +134,20 @@ body {
   margin-right: 52px;
 }
 
+.header-link {
+  font-weight: 600;
+  color: #1c1c1c;
+  font-size: 15px;
+}
+
 /* .hero  */
 
 .hero {
   padding: 100px 0;
+  background-image: url('../img/hero-cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-content {
@@ -97,18 +159,47 @@ body {
 .hero-title {
   margin: 0;
   margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
 .hero-descr {
   margin: 0;
   margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 155%;
+  color: #787878;
 }
 
 .hero-btn {
   margin-bottom: 34px;
+  padding: 20px 60px;
+}
+
+.hero-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-secure {
+  font-size: 11px;
+  line-height: 155%;
+  text-transform: uppercase;
+  color: #787878;
+  background-image: url(../img/secure.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  block-size: 14px 17px;
+  padding-left: 30px;
 }
 
 /* services */
+
+.services {
+  border-bottom: 1px solid #DADADA;
+}
 
 .services-title {
   text-align: center;
@@ -121,8 +212,8 @@ body {
 .services-list-item {
   text-align: center;
   width: 270px;
-  padding: 62px 30px;
-  outline: 1px solid #E4E4E4;
+  padding: 60px 30px;
+  border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
 
@@ -137,11 +228,18 @@ body {
 .services-item-title {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1c1c1c;
 }
 
 .services-item-descr {
   margin: 0;
   text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787878;
 }
 
 /* articles */
@@ -221,18 +319,57 @@ body {
 }
 
 /* .contacts  */
-/* 
-.contacts-list {
-  justify-content: space-between;
-
-} */
 
 .contacts-item {
   flex-direction: column;
-  width: 400px;
+  width: 370px;
+  outline: 1px solid aqua;
 }
+
+.contacts-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
 
 .contacts-item-caption {
   margin: 0;
   margin-bottom: 30px;
+}
+
+.contacts-item-text {
+  margin: 0;
+  width: 214px;
+}
+
+.contacts-item-link {
+  margin-bottom: 5px;
+}
+
+.contacts-item-link:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* footer */
+
+.footer-container {
+  padding: 45px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-left,
+.footer-rigt {
+  align-items: center;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 30px;
 }
