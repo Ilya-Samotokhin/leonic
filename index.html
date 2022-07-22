@@ -337,10 +337,48 @@
         </address>
       </div>
     </section>
-    <!-- 
-    <section id="join-us" class="juin-us">
 
-    </section> -->
+    <section id="join-us" class="join-us section-offset">
+      <div class="container">
+        <h2 class="section-title join-us-title">
+          Join us
+        </h2>
+        <p class="section-descr join-us-descr">
+          Take control of&nbsp;your paid subscriptions today!
+        </p>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+          enctype="application/x-www-form-urlencoded" class="form">
+          <div class="form-top flex">
+            <div class="form-top-left flex">
+              <input type="text" name="name" placeholder="Name" required class="form-left-item">
+              <input type="email" name="email" placeholder="E-mail" required class="form-left-item">
+              <input type="tel" name="phone" placeholder="Phone" required class="form-left-item">
+              <select name="country" class="form-left-item">
+                <option value="Country" disabled selected>Country</option>
+                <option value="United States">United States</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="Estonia">Estonia</option>
+              </select>
+            </div>
+            <div class="form-top-right">
+              <textarea name="comment" placeholder="Comment" class="form-textarea"></textarea>
+            </div>
+          </div>
+          <div class="form-bottom flex">
+            <div class="form-wrapper flex">
+              <button class="btn-reset btn btn-form">Get Started</button>
+              <label for="" class="form-check">
+                <input type="checkbox" required>
+                I agree with the <a href="#">user agreement</a>
+              </label>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container flex footer-container">

@@ -134,6 +134,10 @@ body {
   margin-right: 52px;
 }
 
+.header-list-item {
+  position: relative;
+}
+
 .header-list-item:not(:last-child) {
   margin-right: 52px;
 }
@@ -142,11 +146,43 @@ body {
   font-weight: 600;
   color: #1c1c1c;
   font-size: 15px;
+  line-height: 20px;
 }
+
+.header-link:focus {
+  outline: 1px solid #71A7E2;
+  outline-offset: 3px;
+}
+
+.header-link:hover {
+  color: #71A7E2;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3172B9;
+  opacity: 0;
+}
+
+.header-link:active {
+  color: #3172B9;
+  outline: none;
+}
+
+.header-link:active::after {
+  opacity: 1;
+}
+
 
 /* .hero  */
 
 .hero {
+  position: relative;
   padding: 100px 0;
   background-image: url('../img/hero-cover.jpg');
   background-size: cover;
@@ -413,6 +449,95 @@ body {
   width: max-content;
   line-height: 180%;
   color: #787878;
+}
+
+/* join-us */
+.join-us {
+  border-bottom: 1px solid #DADADA;
+}
+
+.join-us-title {
+  text-align: center;
+}
+
+.join-us-descr {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.form-top {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-top-left {
+  flex-wrap: wrap;
+  width: 49%;
+  justify-content: space-between;
+}
+
+.form-top-right {
+  width: 49%;
+}
+
+.form-left-item {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  /* margin-bottom: 20px; */
+  border: 1px solid #DADADA;
+  padding: 16px 28px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  border: 1px solid #DADADA;
+  resize: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.form-left-item:nth-last-child(n+3) {
+  margin-bottom: 20px;
+}
+
+.form-bottom {
+  justify-content: flex-end;
+}
+
+.form-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-form {
+  margin-bottom: 10px;
+  width: 230px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.form-check {
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.form-check input {
+  margin-right: 8px;
+}
+
+.form-check a {
+  color: #3172B9;
+  text-decoration: underline;
 }
 
 /* footer */
